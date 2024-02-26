@@ -1,6 +1,11 @@
-const headerNav = document.querySelector('.header-nav')
-const burger = document.querySelector('.btn-burger')
-burger.addEventListener('click', () => headerNav.classList.toggle('show'))
+// Burger-Menu 
+const headerNav = document.querySelector('.header-nav');
+const btnBurger = document.querySelector('.hamburger');
+
+btnBurger.addEventListener('click', () => {
+    headerNav.classList.toggle('show');
+    btnBurger.classList.toggle('is-active');
+})
 
 const installGenplan = () => {
     const address = document.querySelector('#address')
